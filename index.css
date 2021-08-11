@@ -1,0 +1,148 @@
+
+body{
+    padding: 0;
+    margin: 0 ;
+    font-size: 18px;
+    background-color: rgba(2, 11, 17, 0.9);
+    color: #fff;
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-rows: 0.3fr 0.7fr 1fr 0.3fr;
+    grid-template-columns: 0.8fr 2fr 0.6fr;
+    grid-template-areas: 
+    "d f f"
+    "g g g"
+    "c c c"
+    "v v v";
+    
+}
+#header{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-areas: "n k";
+    grid-area: d;
+}
+#nav-bar{
+    grid-area: n;
+    position: fixed;
+}
+#header-img{
+    width: 100px;
+    height: auto;
+    grid-area: k;
+    
+}
+aside{
+    grid-area: f;
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+    
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25rem;
+}
+#submit{
+    width: 70px;
+    margin-left: 80px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: red;
+}
+#submit:hover{
+    animation-name: width;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes width{
+    100%{
+        width: 150px;
+        background-color: greenyellow;
+    }
+}
+#email{
+    width: 250px;
+}
+#about-us{
+    grid-area: g;
+    display: grid;
+    grid-template-columns:40px 1fr 1fr 1fr 40px;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas: 
+    ". . h . ."
+    ". f s t .";
+    gap: 30px;
+    
+}
+.header{
+    grid-area:h;
+    background-color: mediumslateblue;
+    border-radius: 14px;
+    font-size: 22px;
+    text-align: center;
+}
+.first-section{
+    grid-area: f;
+    border-radius: 14px;
+    background-color: mediumslateblue;
+    margin-top: 10px;
+    text-align: center;
+}
+.second-section{
+    grid-area: s;
+    border-radius: 14px;
+    background-color: mediumslateblue;
+    margin-top: 10px;
+    text-align: center;
+}
+.third-section{
+    grid-area: t;
+    border-radius: 14px;
+    background-color: mediumslateblue;
+    margin-top: 10px;
+    text-align: center;
+}
+.video{
+    grid-area: c;
+}
+.font{
+    font-weight: 500;
+    font-size: 18px;
+}
+#video{
+    padding-left: 470px;
+}
+#footer{
+    grid-area: v;
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-areas: "r p w";
+    gap: 40px;
+}
+.div-1{
+    grid-area: r;
+    padding-left: 10px ;
+}
+.div-2{
+    grid-area: p;
+    padding-left: 10px ;
+}
+.div-3{
+    grid-area: w;
+    padding-left: 10px ;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    
+}
+a:hover{
+    color: lawngreen;
+}
